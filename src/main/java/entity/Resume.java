@@ -1,6 +1,7 @@
 package entity;
 
 import java.time.LocalDateTime;
+import java.util.HashSet;
 import java.util.Set;
 
 import jakarta.persistence.*;
@@ -30,7 +31,7 @@ public class Resume {
 	     joinColumns = @JoinColumn(name = "resume_id"),
 	     inverseJoinColumns = @JoinColumn(name = "skill_id")
 	 )
-	 private Set<Skill> skills;
+	 private Set<Skill> skills = new HashSet<>();
 
     public Resume() {
     }
@@ -72,6 +73,14 @@ public class Resume {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public Set<Skill> getSkills() {
+        return skills;
+    }
+
+    public void setSkills(Set<Skill> skills) {
+        this.skills = skills;
     }
 }
 

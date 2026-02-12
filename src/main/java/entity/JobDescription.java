@@ -1,6 +1,7 @@
 package entity;
 
 import java.time.LocalDateTime;
+import java.util.HashSet;
 import java.util.Set;
 
 import jakarta.persistence.*;
@@ -27,7 +28,7 @@ public class JobDescription {
 	     joinColumns = @JoinColumn(name = "jd_id"),
 	     inverseJoinColumns = @JoinColumn(name = "skill_id")
 	 )
-	 private Set<Skill> requiredSkills;
+	 private Set<Skill> requiredSkills = new HashSet<>();;
 
     public JobDescription() {
     }
@@ -69,6 +70,14 @@ public class JobDescription {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public Set<Skill> getRequiredSkills() {
+        return requiredSkills;
+    }
+
+    public void setRequiredSkills(Set<Skill> requiredSkills) {
+        this.requiredSkills = requiredSkills;
     }
 }
 
