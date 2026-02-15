@@ -1,10 +1,11 @@
-package service;
+package com.resumeanalyser.service;
 
 
-import entity.JobDescription;
-import entity.User;
-import repository.JobDescriptionRepository;
 import org.springframework.stereotype.Service;
+
+import com.resumeanalyser.entity.JobDescription;
+import com.resumeanalyser.entity.User;
+import com.resumeanalyser.repository.JobDescriptionRepository;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -32,5 +33,11 @@ public class JobDescriptionServiceImpl implements JobDescriptionService {
     public List<JobDescription> getJobDescriptionsByUser(User user) {
         return jobDescriptionRepository.findByUser(user);
     }
+
+	@Override
+	public JobDescription getById(Long jdId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
 

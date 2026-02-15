@@ -1,8 +1,9 @@
-package service;
+package com.resumeanalyser.service;
 
-import entity.User;
-import repository.UserRepository;
 import org.springframework.stereotype.Service;
+
+import com.resumeanalyser.entity.User;
+import com.resumeanalyser.repository.UserRepository;
 
 import java.time.LocalDateTime;
 import java.util.Optional;

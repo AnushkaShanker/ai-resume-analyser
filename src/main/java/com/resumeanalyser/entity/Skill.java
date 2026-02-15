@@ -1,4 +1,4 @@
-package entity;
+package com.resumeanalyser.entity;
 
 import jakarta.persistence.*;
 

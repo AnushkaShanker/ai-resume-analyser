@@ -1,8 +1,8 @@
-package service;
-
-import entity.User;
+package com.resumeanalyser.service;
 
 import java.util.Optional;
+
+import com.resumeanalyser.entity.User;
 
 public interface UserService {
 

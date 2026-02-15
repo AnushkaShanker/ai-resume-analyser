@@ -1,8 +1,9 @@
-package service;
+package com.resumeanalyser.service;
 
-import entity.Skill;
-import repository.SkillRepository;
 import org.springframework.stereotype.Service;
+
+import com.resumeanalyser.entity.Skill;
+import com.resumeanalyser.repository.SkillRepository;
 
 @Service
 public class SkillServiceImpl implements SkillService {

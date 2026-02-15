@@ -1,6 +1,6 @@
-package service;
+package com.resumeanalyser.service;
 
-import entity.Skill;
+import com.resumeanalyser.entity.Skill;
 
 public interface SkillService {
 

@@ -1,9 +1,10 @@
-package repository;
+package com.resumeanalyser.repository;
 
-import entity.AnalysisResult;
-import entity.JobDescription;
-import entity.Resume;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.resumeanalyser.entity.AnalysisResult;
+import com.resumeanalyser.entity.JobDescription;
+import com.resumeanalyser.entity.Resume;
 
 import java.util.Optional;
 
